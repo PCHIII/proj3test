@@ -12,6 +12,8 @@ import {
   Icons as IconsView,
   Account as AccountView,
   Settings as SettingsView,
+  SignUp as SignUpView,
+  SignIn as SignInView,
  
 } from './views';
 
@@ -68,6 +70,20 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/settings"
+      />
+
+      <RouteWithLayout
+        component={SignUpView}
+        exact
+        layout={MainLayout}
+        path="/sign-up"
+      />
+
+      <RouteWithLayout
+        component={SignInView}
+        exact
+        layout={MainLayout}
+        path="/sign-in"
       />
     
       <Redirect to="/not-found" />
