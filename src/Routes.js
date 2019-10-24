@@ -32,8 +32,7 @@ const Routes = () => {
         path="/dashboard"
       />
 
-      {/* Sign in page for authentication would go somewhere in here */}
-
+      
 
       <RouteWithLayout
         component={UserListView}

@@ -9,10 +9,11 @@ import {
   CardContent,
   CardActions,
   Divider,
-  Button
+  Button,
+  TextField
 } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 // import { data, options } from './chart';
 
@@ -34,6 +35,7 @@ const LatestSales = props => {
 
   return (
     <Card
+    
       {...rest}
       className={clsx(classes.root, className)}
     >
@@ -49,7 +51,12 @@ const LatestSales = props => {
         title="Chat Log"
       />
       <Divider />
-      <CardContent>
+      <CardContent
+        style={{
+          minHeight: 450
+        }}
+      >
+
         {/* <div className={classes.chartContainer}>
           <Bar
             data={data}
@@ -61,15 +68,33 @@ const LatestSales = props => {
       </CardContent>
       <Divider />
       <CardActions className={classes.actions}>
-        <Button
+        {/* <Button
           color="primary"
           size="small"
           variant="text"
         >
           Overview <ArrowRightIcon />
-        </Button>
+        </Button> */}
+
+        <TextField
+          fullWidth
+          id="outlined-full-width"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          label="Chat"
+          // helperText="Full width!"
+          margin="normal"
+          placeholder=""
+          style={{ margin: 8 }}
+          variant="outlined"
+        />
       </CardActions>
+
+     
     </Card>
+
+    
   );
 };
 
