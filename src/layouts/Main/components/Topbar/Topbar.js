@@ -7,6 +7,8 @@ import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
+import Typography from '@material-ui/core/Typography'
+// import { colors } from '@material-ui/core';
 // import orange from '@material-ui/core/colors/orange';
 
 
@@ -38,11 +40,24 @@ const Topbar = props => {
     >
       <Toolbar>
         <RouterLink to="/">
+
+          <Typography 
+            style = {{
+            // Some CSS
+              color: 'white',
+              fontWeight: 'bold'
+            }}
+            
+            variant="h1"
+          >
+                            Ch@
+          </Typography>
+{/*                 
           <img
             alt="Logo"
             
             src="/images/logos/logo--white.svg"
-          />
+          /> */}
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>

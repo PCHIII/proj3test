@@ -44,7 +44,7 @@ const Sidebar = props => {
 
   const pages = [
     {
-      title: 'Dashboard',
+      title: 'Dashboard/Chat',
       href: '/dashboard',
       icon: <DashboardIcon />
     },
@@ -59,7 +59,7 @@ const Sidebar = props => {
       icon: <ShoppingBasketIcon />
     },
     {
-      title: 'Authentication',
+      title: 'Authentication/Sign-In',
       href: '/sign-in',
       icon: <LockOpenIcon />
     },

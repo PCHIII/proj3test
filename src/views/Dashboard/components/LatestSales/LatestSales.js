@@ -53,28 +53,18 @@ const LatestSales = props => {
       <Divider />
       <CardContent
         style={{
-          minHeight: 450
+          minHeight: 680,
+          overflow: 'auto'
         }}
       >
 
-        {/* <div className={classes.chartContainer}>
-          <Bar
-            data={data}
-            options={options}
-          />
-        </div> */}
+      
 
         <p>Some Chat text in here</p>
       </CardContent>
       <Divider />
       <CardActions className={classes.actions}>
-        {/* <Button
-          color="primary"
-          size="small"
-          variant="text"
-        >
-          Overview <ArrowRightIcon />
-        </Button> */}
+       
 
         <TextField
           fullWidth

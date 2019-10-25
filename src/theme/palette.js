@@ -9,7 +9,7 @@ export default {
   primary: {
     contrastText: white,
     dark: colors.indigo[900],
-    main: colors.cyan[700],
+    main: colors.cyan[300],
     light: colors.indigo[100]
   },
   secondary: {
@@ -48,7 +48,7 @@ export default {
     link: colors.blue[600]
   },
   background: {
-    default: '#F4F6F8',
+    default: '#F4F6F10',
     paper: white
   },
   icon: colors.blueGrey[600],

@@ -3,14 +3,10 @@ import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
 import {
-  // Budget,
-  TotalUsers,
-  // TasksProgress,
-  // TotalProfit,
+ 
   LatestSales,
   UsersByDevice,
-  // LatestProducts,
-  // LatestOrders
+  
 } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -28,26 +24,6 @@ const Dashboard = () => {
         container
         spacing={2}
       >
-        {/* <Grid
-          item
-          lg={3}
-          sm={6}
-          xl={3}
-          xs={12}
-        >
-          <Budget />
-        </Grid> */}
-        <Grid
-          item
-          // lg={8}
-          // sm={6}
-          // xl={3}
-          xs={12}
-        >
-          <TotalUsers />
-        </Grid>
-       
-        
        
         <Grid
           item
@@ -60,7 +36,7 @@ const Dashboard = () => {
         </Grid>
         <Grid
           item
-          // lg={4}
+          lg={4}
           md={6}
           xl={3}
           xs={12}
@@ -68,15 +44,15 @@ const Dashboard = () => {
         >
           <UsersByDevice />
         </Grid>
-        <Grid
-          item
+        {/* <Grid */}
+        {/* item
           // lg={8}
           // sm={6}
           // xl={3}
           xs={12}
         >
           <TotalUsers />
-        </Grid>
+        </Grid> */}
         
       
       </Grid>
