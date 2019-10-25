@@ -61,30 +61,30 @@ const useStyles = makeStyles(theme => ({
     }
   },
   quote: {
-    backgroundColor: theme.palette.neutral,
+    backgroundColor: 'lightgrey',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/auth.jpg)',
+    // backgroundImage: 'url(/images/auth.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
   quoteInner: {
     textAlign: 'center',
-    flexBasis: '600px'
+    flexBasis: '650px'
   },
   quoteText: {
-    color: theme.palette.white,
+    color: theme.palette.black,
     fontWeight: 300
   },
   name: {
     marginTop: theme.spacing(3),
-    color: theme.palette.white
+    color: theme.palette.black
   },
   bio: {
-    color: theme.palette.white
+    color: theme.palette.black
   },
   contentContainer: {},
   content: {
@@ -210,21 +210,25 @@ const SignUp = props => {
                 className={classes.quoteText}
                 variant="h1"
               >
-                Hella narwhal Cosby sweater McSweeney's, salvia kitsch before
-                they sold out High Life.
+                 Welcome to Ch@, please register and enjoy your stay.  We hope you have a wonderful time. 
+
+                
               </Typography>
               <div className={classes.person}>
                 <Typography
                   className={classes.name}
                   variant="body1"
                 >
-                  Takamaru Ayako
+                 The Dev Team:
                 </Typography>
                 <Typography
                   className={classes.bio}
-                  variant="body2"
+                  variant="body1"
                 >
-                  Manager at inVision
+                  Daniel Cho -
+                  Ryan Wiengart -
+                  Khavin Lindo -
+                  Trey Helmer 
                 </Typography>
               </div>
             </div>

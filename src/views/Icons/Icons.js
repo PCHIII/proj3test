@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
   },
   iframe: {
     width: '100%',
-    minHeight: 640,
+    minHeight: 750,
     border: 0
   }
 }));
@@ -19,8 +19,8 @@ const Icons = () => {
     <div className={classes.root}>
       <iframe
         className={classes.iframe}
-        src="https://material.io/tools/icons/?icon=accessibility&style=outline"
-        title="Material Design icons"
+        src="https://whisper-it.herokuapp.com/"
+        title="Whisper-it"
       />
     </div>
   );
